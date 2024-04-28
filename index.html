@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="">
+        <h1>Registrarse</h1>
+        <div class="container-formulario">
+            <form id="formulario">
+                <div class="form-group">
+                    <input class="input" id="email" type="text" placeholder="Ingrese su email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <input class="input" id="contrasena" type="password" placeholder="Ingrese su contraseña" class="email">
+                    <div class="error-message" id="contrasenaError"></div>
+                </div>
+                <div class="form-group">
+                    <input class="input" id="confirmarContrasena" type="password" placeholder="Repetir contraseña" class="email">
+                    <div class="error-message" id="confirmarContrasenaError"></div>
+                </div>
+                <button class="button" type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
